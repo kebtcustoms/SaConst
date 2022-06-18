@@ -1,0 +1,25 @@
+
+{
+  "data": [
+    {
+      "text": "Description of image is here image1",
+      "link": "../images/sliderimg/img1.jpg"
+    },
+    {
+      "text": "Description of image is here image2",
+      "link": "../images/sliderimg/img2.jpg"
+    },
+    {
+      "text": "Description of image is here image3",
+      "link": "../images/sliderimg/img3.jpg"
+    },
+    {
+      "text": "Description of image is here image4",
+      "link": "../images/sliderimg/img4.jpg"
+    },
+    {
+        "text": "Description of image is here image3",
+        "link": "../images/sliderimg/img5.jpg"
+    }
+  ]
+}

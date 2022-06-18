@@ -1,25 +1,38 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react'
+// import './App.css';
+import Header from './components/header/header.js';
+import HomePage from './pages/homepage/homepage.js';
+import AboutUs from './pages/aboutus/aboutus.js';
+import Services from './pages/services/services.js';
+import ProductGallery from './pages/productgallery/productgallery.js';
+import ContactUs from './pages/contactus/contactus.js';
+import PrivacyPolicy from './pages/privacypolicy/privacypolicy.js';
+import TermsConditions from './pages/termsconditions/termsconditions.js';
+import Footer from './components/footer/footer.js';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import ScrollToTop from './components/scrolltotop/scrolltotop.js';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+export default function App(){
+  return(
+    <div>
+    <BrowserRouter>
+    <ScrollToTop>
+      
+    <Header />
+    <Routes>
+      <Route exact path='/' element={<HomePage />} />
+      <Route path='/aboutus' element={<AboutUs />} />
+      <Route path='/services' element={<Services />} />
+      <Route path='/productgallery' element={<ProductGallery />} />
+      <Route path='/contactus' element={<ContactUs />} />
+      <Route path='/privacypolicy' element={<PrivacyPolicy />} />
+      <Route path='/termsconditions' element={<TermsConditions />} />
+    </Routes>
+    <Footer />
+    </ScrollToTop>
+    </BrowserRouter>
     </div>
-  );
-}
+    )
+  }
 
-export default App;
+

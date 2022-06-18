@@ -1,0 +1,18 @@
+.terms--container{
+    width: 95%;
+    margin: 20px auto;
+}
+
+.termscontent--container{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.termscontent--container ul{
+    margin: 20px 0px 20px 0px;
+}
+
+.termscontent--container li{
+    margin-left: 20px;
+}

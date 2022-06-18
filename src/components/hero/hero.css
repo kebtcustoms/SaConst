@@ -1,0 +1,94 @@
+.hero--wrapper{
+    /* border: 1px solid red; */
+    height: 1000px;
+    
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 50px;
+}
+
+/* .skewed {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background: #2c3e50;
+    transform: skewY(-68deg);
+    z-index: 1;
+    transform-origin: top left;
+  } */
+
+.skewed--filter{
+    position: relative;
+    width: 70%;
+    height: 100%;
+    clip-path: polygon(0 0, 100% 0%, 75% 100%, 0% 100%);
+    background: rgba(75, 75, 75, 0.5);
+    border-radius: 15px 0px 0px 15px;
+}
+
+.hero--container{
+    position: relative;
+    /* border: 1px solid lime; */
+    width: min(90%, 1920px);
+    height: 100%;
+    border-radius: 15px;
+    /* top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); */
+    background-image: url(/public/images/sliderimg/img4.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.hero--content{
+    position: absolute;
+    /* border: 1px solid rgb(42, 170, 255); */
+    top: 0;
+    left: 0;
+    width: 60%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 10%;
+}
+
+.button--container{
+    width: 50%;
+}
+
+.hero--content h1 {
+    color: white;
+    /* font-size: 2rem; */
+    font-size: clamp(2rem, 1.6428571428571428rem + 1.7857142857142856vw, 4.5rem);
+    text-shadow: 3px 2px 3px rgba(77, 77, 77, 0.7);
+    margin: -40px 0px 0px 0px;
+    line-height: 1.5;
+}
+
+.hero--content p{
+    color: white;
+    font-size: clamp(1.5rem, 1.4285714285714286rem + 0.35714285714285715vw, 2rem);
+    text-shadow: 3px 2px 3px rgba(77, 77, 77, 0.7);
+    margin: 0px;
+    line-height: 1.5;
+}
+
+.hero--content button{
+    font-family: 'SAFont';
+    font-size: 36px;
+    width: 100%;
+    color: white;
+    background-color: #FF7B00;
+    border-radius: 15px;
+    padding: 20px 10px 20px 10px;
+    border: none;
+    cursor: pointer;
+    margin-top: 0px;
+}
+

@@ -1,0 +1,154 @@
+.carousel--container {
+    width: 100vw;
+  }
+  
+  .aboutusslider {
+    width: 100%;
+    padding-top: 0px;
+    height: 400px;
+  }
+  
+  .aboutusslider .swiper-slide {
+    background-position: center;
+    border-radius: 15px;
+    width: 20%;
+    height: 100%;
+    background-color: rgb(238, 238, 238);
+  }
+  
+  /* .aboutusslider .swiper-slide img {
+    object-fit: cover;
+    width: 100%;
+    border-radius: 15px;
+    height: 100%;
+    display: none;
+  } */
+
+  .aboutusslider .swiper-slide:nth-child(1n) {
+    background-color: rgb(238, 238, 238);
+  }
+  
+  .aboutusslider .swiper-slide:nth-child(2n) {
+    background-color: rgb(238, 238, 238);
+  }
+  
+  .aboutusslider .swiper-slide:nth-child(3n) {
+    background-color: rgb(238, 238, 238);;
+  }
+  
+  .aboutusslider  .swiper-slide:nth-child(4n) {
+    background-color: rgb(238, 238, 238);
+  }
+  
+  .aboutusslider  .swiper-slide:nth-child(5n) {
+    background-color: rgb(238, 238, 238);;
+  }
+  
+  .aboutusslider  .swiper-slide:nth-child(6n) {
+    background-color: rgb(238, 238, 238);
+  }
+
+  .aboutcards{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px;
+  }
+
+  .aboutcards p{
+    width: 100%;
+    -webkit-line-clamp: 10;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    user-select:none;
+  }
+
+  .aboutusslider .aboutcards img{
+    display: block;
+    width: 30%;
+    object-fit: contain;
+    text-align: left;
+  }
+
+  /* .aboutmodal{
+    z-index: 999;
+  } */
+
+  .aboutusslider2 {
+    width: 100%;
+    padding-top: 0px;
+    height: 600px;
+  }
+  
+  .aboutusslider2 .swiper-slide {
+    background-position: center;
+    border-radius: 15px;
+    width: 90%;
+    height: 100%;
+    background-color: rgb(238, 238, 238);
+  }
+  
+  /* .aboutusslider2 .swiper-slide img {
+    object-fit: cover;
+    width: 50%;
+    border-radius: 15px;
+    height: 100%;
+    display: none;
+  } */
+
+  .aboutusslider2 .swiper-slide:nth-child(1n) {
+    background-color: rgb(238, 238, 238);
+  }
+  
+  .aboutusslider2 .swiper-slide:nth-child(2n) {
+    background-color: rgb(238, 238, 238);
+  }
+  
+  .aboutusslider2 .swiper-slide:nth-child(3n) {
+    background-color: rgb(238, 238, 238);;
+  }
+  
+  .aboutusslider2  .swiper-slide:nth-child(4n) {
+    background-color: rgb(238, 238, 238);
+  }
+  
+  .aboutusslider2  .swiper-slide:nth-child(5n) {
+    background-color: rgb(238, 238, 238);;
+  }
+  
+  .aboutusslider2  .swiper-slide:nth-child(6n) {
+    background-color: rgb(238, 238, 238);
+  }
+
+  .aboutusslider2 .aboutcards img{
+    display: block;
+    width: 10%;
+    object-fit: contain;
+    text-align: left;
+  }
+
+  .overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(27, 27, 27, 0.541);
+    display: flex;
+    align-items: center;
+    z-index: 5;
+  }
+
+  .overlay > span {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    font-size: 30px;
+    color: #ffffff;
+    z-index: 4;
+    cursor: pointer;
+  }
+
