@@ -1,29 +1,29 @@
 .slider--wrapper {
   position: relative;
-  height: 1000px;
-  margin: 10px auto 50px;
+  height: min(75vh);
+  margin: 0px;
   display: flex;
   justify-content: center;
   align-items: center;
-  border: 1px orange solid;
+  /* border: 1px orange solid; */
 }
 
 .slider--content {
   position: absolute;
-  width: 80%;
   height: 100%;
-  border: 1px greenyellow solid;
-  width: min(90%, 1920px);
+  /* border: 1px greenyellow solid; */
+  width: min(80%, 1920px);
 }
 
 .slider--content h1{
   position: absolute;
   font-family: 'SAFont';
-  font-size: 72px;
+  font-size: 2.25rem;
+  line-height: 1.3;
   color: white;
   z-index: 2;
   margin: 0;
-  left: 40px;
+  padding-left: 5%;
   top: 5%;
 }
 
@@ -39,18 +39,28 @@
   border: none;
   cursor: pointer;
   margin: 0px;
-  bottom: 65px;
+  bottom: 45px;
   right: 50px;
   z-index: 2;
 }
 
+.skeweds--filter {
+  position: absolute;
+  width: 70%;
+  height: 100%;
+  clip-path: polygon(0 0, 100% 0%, 75% 100%, 0% 100%);
+  background: rgba(75, 75, 75, 0.5);
+  z-index: 1;
+}
+
 .mySwiperSlider {
   position: relative;
-  width: min(90%, 1920px);
+  width: min(80%, 1920px);
   padding-top: 0px;
-  height: 1000px;
-  /* margin: 10px auto 50px; */
+  height: min(75vh);
   border-radius: 15px;
+  box-shadow: 0 2px 3px 0 rgb(60 64 67 / 25%), 0 2px 6px 5px rgb(60 64 67 / 15%);
+
 }
 
 .mySwiperSlider .swiper-slide {
@@ -66,14 +76,16 @@
   height: 100%;
 }
 
+
 .mySwiperSlider .swiper-button-next {
   background-image: url(/public/images/buttonright.png);
   background-repeat: no-repeat;
   background-size: 80% auto;
   background-position: center;
-  right: 5%;
+  right: 1.5%;
   position: absolute;
-  top: 75px;
+  top: 10%;
+  filter: brightness(0) invert(1);
 }
 
 .mySwiperSlider .swiper-button-next::after {
@@ -86,8 +98,9 @@
   background-size: 80% auto;
   background-position: center;
   position: absolute;
-  left:80%;
-  top: 75px;
+  left:79.5%;
+  top: 10%;
+  filter: brightness(0) invert(1);
 }
 
 .mySwiperSlider .swiper-button-prev::after {
@@ -100,44 +113,45 @@
   transform: translate3d(0,0,0);
   z-index: 10;
   color: white;
-  font-size: 48px;
+  font-size: 2.25rem;
   width: 10%;
-  top: 45px;
-  left: 82.7%;
-  font-family: 'SAFont';
+  top: 6.5%;
+  left: 84%;
+}
+
+.swip-container{
+  position: absolute;
+  bottom: 40px;
+  left: 40px;
+  z-index: 2;
+  
 }
 
 .mySwiperSlider .subtitle {
-  position: absolute;
-  bottom: 200px;
-  left: 40px;
+  position: relative;
+  margin-bottom: 20px;
 }
 
 .mySwiperSlider .subtitle h2 {
   margin: 0px;
   color: white;
   font-family: 'SAFont';
-  font-size: 48px;
-  letter-spacing: 10px;
+  font-size: 2.25rem;
 }
 
 .mySwiperSlider .text {
-  position: absolute;
-  bottom: 40px;
-  left: 40px;
+  position: relative;
 }
 
 .mySwiperSlider .text p {
-  margin: 0px;
   color: white;
-  font-size: 36px;
-  width: max(65%,700px);
-  margin: 0px;
+  font-size: 1.25rem;
+  line-height: 1.3;
+  width: max(65%,600px);
 }
 
 .slider--stripe {
   position: absolute;
-  /* border: 1px solid blue; */
   width: 100%;
   height: 80%;
   background-color: rgb(238, 238, 238);
@@ -150,69 +164,70 @@
   --swiper-navigation-size: 100px;
 }
 
-@media (max-width: 1024px){
-
-  /* .slider--content {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    border: 1px greenyellow solid;
-    width: min(90%, 1920px);
-  }
-  
-  .slider--content h1{
-    position: absolute;
-    font-family: 'SAFont';
-    font-size: 72px;
-    color: white;
-    z-index: 2;
-    margin: 0;
-    left: 40px;
-    top: 5%;
-  } */
-
-  .mySwiperSlider .subtitle {
-    /* position: absolute; */
-    bottom: 475px;
-    /* left: 40px; */
-  }
-
-  /* .mySwiperSlider .subtitle h2 {
-    margin: 0px;
-    color: white;
-    font-family: 'SAFont';
-    font-size: 48px;
-    letter-spacing: 10px;
-  } */
-  
+@media (max-width: 1270px){
   .slider--content button{
-    /* position: absolute;
-    font-family: 'SAFont';
-    font-size: 30px; */
-    width: 50%;
-    /* color: white;
-    background-color: #FF7B00;
-    border-radius: 15px;
-    padding: 15px 5px 15px 5px;
-    border: none;
-    cursor: pointer;
-    margin: 0px;
-    bottom: 65px; */
-    left: 40px;
-    /* z-index: 2; */
+    width: 35%;
+    margin: auto;
   }
 
-  .mySwiperSlider .text {
-    /* position: absolute; */
-    bottom: 175px;
-    /* left: 40px; */
-  }
-  
   .mySwiperSlider .text p {
     margin: 0px;
     color: white;
-    font-size: 36px;
-    width: 80%;
+    width: 58%;
     margin: 0px;
   }
+
+
 }
+
+@media (max-width: 1024px){
+
+  .swip-container{
+    width: 90%;
+    bottom: 140px;
+    left: 0px;
+    right: 0px;
+    margin: auto;
+  }
+
+  .mySwiperSlider{
+    width: 90%;
+  }
+
+  .slider--content {
+    width: 90%;
+  }
+  
+  .slider--content button{
+    width: 90%;
+    left: 0px;
+    right: 0px;
+    margin: auto;
+  }
+
+  .mySwiperSlider .text p {
+    margin: 0px;
+    color: white;
+    width: 100%;
+    margin: 0px;
+  }
+
+  .mySwiperSlider .swiper-button-next {
+    right: 0px;
+    left: 165px;
+    top: 120px;
+  }
+
+  .mySwiperSlider .swiper-button-prev {
+    left: 3%;
+    top: 120px;
+  }
+  
+  .swiper-pagination {
+    top: 100px;
+    left: 90px;
+    width: fit-content;
+  }
+
+}
+

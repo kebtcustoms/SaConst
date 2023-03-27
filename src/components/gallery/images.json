@@ -2,24 +2,73 @@
 {
   "data": [
     {
-      "text": "Description of image is here image1",
-      "link": "../images/sliderimg/img1.jpg"
+      "text": "Residential trim project.",
+      "link": "https://amg-info-space.nyc3.cdn.digitaloceanspaces.com/saconst%2FResized_20220517_160537.JPEG"
     },
     {
       "text": "Description of image is here image2",
-      "link": "../images/sliderimg/img2.jpg"
+      "link": "https://amg-info-space.nyc3.cdn.digitaloceanspaces.com/saconst%2FIMG_1112.JPG"
     },
     {
       "text": "Description of image is here image3",
-      "link": "../images/sliderimg/img3.jpg"
+      "link": "https://amg-info-space.nyc3.cdn.digitaloceanspaces.com/saconst%2FIMG_2355.JPG"
     },
     {
       "text": "Description of image is here image4",
-      "link": "../images/sliderimg/img4.jpg"
+      "link": "https://amg-info-space.nyc3.cdn.digitaloceanspaces.com/saconst%2FIMG_2358.JPG"
     },
     {
         "text": "Description of image is here image3",
-        "link": "../images/sliderimg/img5.jpg"
+        "link": "https://amg-info-space.nyc3.cdn.digitaloceanspaces.com/saconst%2FResized_20220516_102349.JPEG"
+    },
+    {
+      "text": "Description of image is here image1",
+      "link": "https://amg-info-space.nyc3.cdn.digitaloceanspaces.com/saconst%2FResized_20220511_112532.JPEG"
+    },
+    {
+      "text": "Description of image is here image2",
+      "link": "https://amg-info-space.nyc3.cdn.digitaloceanspaces.com/saconst%2FResized_20211124_114610.JPEG"
+    },
+    {
+      "text": "Description of image is here image3",
+      "link": "https://amg-info-space.nyc3.cdn.digitaloceanspaces.com/saconst%2FIMG_2445.JPG"
+    },
+    {
+      "text": "Description of image is here image4",
+      "link": "https://amg-info-space.nyc3.cdn.digitaloceanspaces.com/saconst%2FIMG_2380(1).JPG"
+    },
+    {
+      "text": "Residential deck construction project.",
+      "link": "https://amg-info-space.nyc3.cdn.digitaloceanspaces.com/saconst%2FIMG_2375.JPG"
+    },
+    {
+      "text": "Residential trim project.",
+      "link": "https://amg-info-space.nyc3.cdn.digitaloceanspaces.com/saconst%2FIMG_2374.JPG"
+    },
+    {
+      "text": "Residential roofing project",
+      "link": "https://amg-info-space.nyc3.cdn.digitaloceanspaces.com/saconst%2FIMG_2361.JPG"
+    },
+    {
+      "text": "Description of image is here image3",
+      "link": "https://amg-info-space.nyc3.cdn.digitaloceanspaces.com/saconst%2FIMG_2357.JPG"
+    },
+    {
+      "text": "Description of image is here image4",
+      "link": "https://amg-info-space.nyc3.cdn.digitaloceanspaces.com/saconst%2FIMG_2359.JPG"
+    },
+    {
+        "text": "Residential roofing project",
+        "link": "https://amg-info-space.nyc3.cdn.digitaloceanspaces.com/saconst%2FIMG_2360.JPG"
+    },
+    {
+      "text": "Description of image is here image1",
+      "link": "https://amg-info-space.nyc3.cdn.digitaloceanspaces.com/saconst%2FIMG_2379.JPG"
+    },
+    {
+      "text": "Description of image is here image2",
+      "link": "https://amg-info-space.nyc3.cdn.digitaloceanspaces.com/saconst%2FIMG_2364.JPG"
     }
+    
   ]
 }

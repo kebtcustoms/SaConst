@@ -10,13 +10,19 @@ export default function ServicesLeft(props) {
                     <div className="servicesleft--break"></div>
                     <p>{props.text}</p>
                 </div>
-                <div className="servicesleft--img"></div>
+                <div className="servicesleft--img">
+                    <img src={props.img} alt={props.alt}> 
+                    </img>
+                </div>
             </div>
             <div className="servicesleftmobile--container">
                 <div className="services--content">
                     <h1>{props.title}</h1>
                     <div className="servicesleft--break"></div>
-                    <div className="servicesleft--img"></div>
+                    <div className="servicesleft--img">
+                    <img src={props.img} alt={props.alt}> 
+                    </img>
+                    </div>
                     <p>{props.text}</p>
                 </div>
             </div>

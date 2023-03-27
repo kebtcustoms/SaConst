@@ -7,7 +7,6 @@ export default function Title(props){
             <div className="title--container">
                 <div className="title--content">
                    <h1>{props.title}</h1>
-                   <div className="title--break"></div>
                 </div>
             </div>
         </div>

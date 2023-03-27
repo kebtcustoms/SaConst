@@ -1,16 +1,14 @@
 .aboutus--wrapper{
-    /* border: 1px solid red; */
-    height: 750px;
+    height: min(65vh);
     position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 20px auto 50px;
+    margin: 0px;
 }
 
 .aboutus--stripe{
     position: absolute;
-    /* border: 1px solid blue; */
     width: 100%;
     height: 80%;
     background-color: rgb(238, 238, 238);
@@ -18,8 +16,7 @@
 
 .aboutus--container {
     position: relative;
-    /* border: 1px solid green; */
-    width: min(90%, 1920px);
+    width: min(80%, 1920px);
     height: 100%;
     display: flex;
     justify-content: center;
@@ -28,7 +25,6 @@
 
 .aboutus--content{
     position: relative;
-    /* border: 1px solid pink; */
     height: 80%;
     width: 50%;
     margin-right: 30px;
@@ -38,20 +34,19 @@
     align-items: flex-end;
     justify-content: center;
     text-align: right;
-    gap: 2rem;
+    gap: 20px;
 }
 
 .aboutus--content h1{
     font-family: 'SAFont';
-    font-size: 48px;
+    font-size: 2.25rem;
     margin: 0px;
-    line-height: 1.5;
 }
 
 .aboutus--content p{
-    font-size: 24px;
+    font-size: 1.125rem;
     margin: 0px;
-    line-height: 1.5;
+    line-height: 1.3;
 }
 
 .aboutus--break{
@@ -76,15 +71,16 @@
 
 .aboutus--img{
     position: relative;
-    /* border: 1px solid orange; */
     height: 100%;
     width: 50%;
-    background-image: url(/public/images/sliderimg/img5.jpg);
+    background-image: url("https://amg-info-space.nyc3.cdn.digitaloceanspaces.com/saconst%2FIMG_2372.JPG");
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
     border-radius: 15px;
     margin-left: 30px;
+    box-shadow: 0 2px 3px 0 rgb(60 64 67 / 25%), 0 2px 6px 5px rgb(60 64 67 / 15%);
+
 }
 
 .aboutus--mobile {
@@ -102,18 +98,12 @@
     .aboutus--wrapper{
         height: auto;
         width: 100%;
-        border: 1px solid red;
         position: relative;
         display: flex;
-        /* justify-content: center;
-        align-items: center; */
-        margin: 20px auto 50px;
     }
 
     .aboutus--mobile {
-        border: 1px solid blue;
         position: relative;
-        /* border: 1px solid green; */
         width: min(90%, 1700px);
         display: flex;
         flex-direction: column;
@@ -124,35 +114,41 @@
     
     .aboutus--img{
         position: relative;
-        /* border: 1px solid orange; */
-        height: 600px;
+        height: 450px;
         width: 100%;
-        background-image: url(/public/images/sliderimg/img5.jpg);
+        background-image: url("https://amg-info-space.nyc3.cdn.digitaloceanspaces.com/saconst%2FIMG_2372.JPG");
         background-repeat: no-repeat;
         background-position: center;
         background-size: cover;
         border-radius: 15px;
         margin-left: 0px;
+        
     }
     .aboutus--content{
         position: relative;
-        /* border: 1px solid pink; */
-        /* height: 80%; */
         width: 100%;
         margin-right: 0px;
         margin-left: 0px;
         display: flex;
-        /* flex-direction: column; */
         align-items: center;
-        /* justify-content: center; */
-        text-align: center;
-        gap: 2rem;
+        text-align: left;
+        gap: 20px;
     }
     .aboutus--content h1{
         align-self: start;
         font-family: 'SAFont';
-        font-size: 48px;
         margin: 0px;
     }
+}
 
+@media (max-width: 580px){
+    .aboutus--img{
+        height: 400px;
+    }
+}
+
+@media (max-width: 390px){
+    .aboutus--img{
+        height: 250px;
+    }
 }
