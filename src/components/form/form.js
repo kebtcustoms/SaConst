@@ -1,6 +1,10 @@
 import React, { Component } from 'react'
+import { useNavigate } from "react-router-dom";
 import "./form.css"
 import axios from 'axios'
+
+
+
 
 export default class Form extends Component {
 
@@ -108,9 +112,13 @@ export default class Form extends Component {
         if (e.target.classList.contains("dismiss")) {
             this.setState({
                 modal: false
-            })
+            });
+            
+            const navigate = useNavigate();
+            navigate("/");
         }
     }
+    
 
 
     formSubmit = (e) => {
@@ -127,7 +135,7 @@ export default class Form extends Component {
             urgent: this.state.urgent ? "Urgent" : null
         }
 
-        axios.post('https://lionfish-app-hlo5s.ondigitalocean.app/api/forma', data)
+        axios.post('https://all-info-sites-api-bypgj.ondigitalocean.app/saconst/contact', data)
             .then(res => {
                 this.setState({
                     sent: true,
@@ -164,7 +172,7 @@ export default class Form extends Component {
             this.setState({
                 sent: false,
             })
-        }, 1000)
+        }, 200)
     }
 
 
